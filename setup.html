@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Setup - Smart Finance Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="setup-page">
+    <section class="setup-card">
+      <div class="brand">💰 Smart Finance Planner</div>
+      <div class="step">STEP 1 OF 2</div>
+      <h1>Let's build your financial plan</h1>
+      <p class="muted">Tell us about your monthly income.</p>
+
+      <form id="incomeForm">
+        <label>Monthly Salary</label>
+        <input id="salary" type="number" min="0" required placeholder="50000">
+
+        <label>Other Income <span class="muted">(optional)</span></label>
+        <input id="otherIncome" type="number" min="0" value="0" placeholder="5000">
+
+        <label>Salary Date</label>
+        <input id="salaryDate" type="number" min="1" max="31" value="1" required>
+
+        <label>Currency</label>
+        <select id="currency">
+          <option value="INR">₹ Indian Rupee</option>
+          <option value="USD">$ US Dollar</option>
+          <option value="EUR">€ Euro</option>
+          <option value="GBP">£ Pound</option>
+        </select>
+
+        <button class="btn primary" type="submit">Continue →</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/setup.js"></script>
+</body>
+</html>

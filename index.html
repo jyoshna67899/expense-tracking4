@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Finance Planner - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <div class="brand">💰 Smart Finance Planner</div>
+    <h1>Welcome back</h1>
+    <p class="muted">Plan your money, track your spending, reach your goals.</p>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input id="loginEmail" type="email" required placeholder="you@example.com">
+
+      <label>Password</label>
+      <input id="loginPassword" type="password" required placeholder="Enter password">
+
+      <label class="check"><input id="remember" type="checkbox"> Remember login</label>
+      <button class="btn primary" type="submit">Login</button>
+    </form>
+
+    <p class="center">New here? <a href="signup.html">Create an account</a></p>
+    <p id="loginMessage" class="message"></p>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

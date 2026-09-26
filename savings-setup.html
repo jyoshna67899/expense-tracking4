@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savings Setup - Smart Finance Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="setup-page">
+    <section class="setup-card">
+      <div class="brand">💰 Smart Finance Planner</div>
+      <div class="step">STEP 2 OF 2</div>
+      <h1>Build your savings plan</h1>
+      <p class="muted">You decide how much you want to save every month.</p>
+
+      <form id="savingsForm">
+        <label>Monthly Savings</label>
+        <input id="monthlySavings" type="number" min="0" required placeholder="15000">
+
+        <label>Savings Goal</label>
+        <input id="goalAmount" type="number" min="0" required placeholder="200000">
+
+        <label>Target Date</label>
+        <input id="targetDate" type="month" required>
+
+        <button class="btn primary" type="submit">Create My Plan →</button>
+      </form>
+      <p id="savingsMessage" class="message"></p>
+    </section>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/setup.js"></script>
+</body>
+</html>

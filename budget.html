@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget - Smart Finance Planner</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar"><div class="brand">💰 Smart Finance</div><nav>
+<a href="dashboard.html">🏠 Dashboard</a><a href="transactions.html">🧾 Transactions</a><a class="active" href="budget.html">💳 Budget</a>
+<a href="savings.html">🎯 Savings Goals</a><a href="analytics.html">📈 Analytics</a></nav>
+<button id="themeToggle" class="nav-button">🌙 Dark Mode</button><button id="logoutBtn" class="nav-button">↪ Logout</button></aside>
+<main class="content"><header class="topbar"><div><h1>Monthly Budget</h1><p class="muted">Set limits and monitor category spending.</p></div></header>
+<section class="panel"><form id="budgetForm" class="form-grid">
+<select id="budgetCategory"><option>Food</option><option>Shopping</option><option>Transport</option><option>Bills</option><option>Education</option><option>Entertainment</option><option>Healthcare</option><option>Rent</option><option>Travel</option><option>Other</option></select>
+<input id="budgetAmount" type="number" min="0" required placeholder="Budget amount"><button class="btn primary">Save Budget</button>
+</form></section><section class="panel"><div id="budgetList"></div></section></main></div>
+<script src="js/storage.js"></script><script src="js/app.js"></script>
+</body></html>
